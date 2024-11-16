@@ -7,17 +7,40 @@
   </head>
   <body>
     <header>
-      <form>
-        <input input type: "search" placeholder="Enter a city..." required >
-        <input input type: "submit" value="Search"
+      <form class="search-form" id="search-form">
+        <input
+          input
+          type="search"
+          placeholder="Enter a city..."
+          required
+          class="search-form-input"
+          id="search-form-input"
+        />
+        <input input type="submit" value="Search" class="search-form-button"
+        id="search-form-button"
       </form>
     </header>
-    <h1>Paris</h1>
-    <p>
-      Saturday:647, overcast clouds <br />
-      Humidity: 77%, Wind: 2.06km/h
-    </p>
-    <div>ICON 8°c</div>
-    <footer>Coded by Claire Ingham</footer>
+    <main class="weather-app-data">
+      <h1 class="current-city" id="current-city">Paris</h1>
+      <p class="current-weather">
+        <span id="datetime"> Saturday 06:30 </span>
+        <span id="summary">overcast clouds </span><br />
+        <span id="humidity">Humidity: </span>
+        <span id="humidity-value">77</span>
+        <span id="humidity-unit">%, 
+        <span id="wind">Wind:</span>
+        <span id="wind-value">2.06 </span>
+         <span id="wind-unit"> km/h</span>
+      </p>
+      <div class="temperature-container">
+        <div id="icon"> ICON</div>
+        <div class="current-temperature-unit">8</div>
+        <div class="current-temperature-icon">°c</div>
+        </div>
+    </main>
+    <footer>
+      This project was coded by Claire Ingham is open-sourced on GitHub and
+      hosted on Netlify
+    </footer>
   </body>
 </html>
