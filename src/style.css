@@ -41,6 +41,7 @@ main {
 .weather-app-data {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 .current-city {
   margin: 0;

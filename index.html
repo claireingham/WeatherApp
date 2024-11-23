@@ -21,45 +21,50 @@
             type="search"
             placeholder="Enter a city..."
             required
-            class="search-form-input"
-            id="search-form-input"
+            class="search-input"
+            id="search-input"
           />
           <input
             input
             type="submit"
             value="Search"
-            class="search-form-button"
+            class="search-button"
             id="search-form-button"
           />
         </form>
       </header>
-      <main class="weather-app-data">
-        <h1 class="current-city" id="current-city">Paris</h1>
-        <p class="current-weather">
-          Saturday 06:30, overcast clouds <br />
-          Humidity: <strong>77%</strong>, Wind: <strong>2.06km/h</strong>
-        </p>
-        <div class="temperature-container">
-          <div class="current-weather-icon" id="icon">☀️</div>
-          <span class="current-temperature">
-            <div class="current-temperature-unit">8</div>
-            <div class="current-temperature-icon">°c</div>
-          </span>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="current-city" id="current-city">Paris</h1>
+            <p class="current-weather">
+              <span id="current-date">Saturday 06:30,</span> overcast clouds
+              <br />
+              Humidity: <strong>77%</strong>, Wind: <strong>2.06km/h</strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <span class="current-temperature-icon" id="icon">☀️</span>
+            <span class="current-temperature-value">8</span>
+            <span class="current-temperature-unit">°c</span>
+          </div>
         </div>
       </main>
       <footer>
-        This project was coded by
-        <a href="https://github.com/claireingham/" target="_blank"
-          >Claire Ingham
-        </a>
-        is
-        <a href="https://github.com/claireingham/WeatherApp" target="_blank"
-          >open-sourced on GitHub</a
-        >
-        and
-        <a href="https://prognostico2.netlify.app/" target="_blank">
-          hosted on Netlify
-        </a>
+        <p>
+          This project was coded by
+          <a href="https://github.com/claireingham/" target="_blank"
+            >Claire Ingham
+          </a>
+          is
+          <a href="https://github.com/claireingham/WeatherApp" target="_blank"
+            >open-sourced on GitHub</a
+          >
+          and
+          <a href="https://prognostico2.netlify.app/" target="_blank">
+            hosted on Netlify
+          </a>
+        </p>
       </footer>
     </div>
   </body>
