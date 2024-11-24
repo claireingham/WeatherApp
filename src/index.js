@@ -1,7 +1,8 @@
-function search(event) {
+function handleSearchSubmit(event) {
   event.preventDefault();
-  let searchInputElement = document.querySelector("#search-input");
-  let city = searchInputElement.value;
+  let searchInput = document.querySelector("#search-input");
+  let cityElement = document.querySelector("#current-city");
+  cityElement.innerHTML = searchInput.value;
 }
 
 function formatDate(date) {
@@ -31,4 +32,4 @@ let currentDateElement = document.querySelector("#current-date");
 currentDateElement.innerHTML = formatDate(currentDate);
 
 let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", search);
+searchForm.addEventListener("submit", handleSearchSubmit);
