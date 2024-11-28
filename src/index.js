@@ -14,7 +14,7 @@ function refreshWeather(response) {
   temperatureElement.innerHTML = Math.round(temperature);
   iconElement.innerHTML = `img src="${response.data.condition.icon_url}"class="weather-app-icon"/>`;
 }
-refreshWeather();
+
 function searchCity(city) {
   let apiKey = "2ef76df8bbtdbob65420d8afef3dc0e3";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
